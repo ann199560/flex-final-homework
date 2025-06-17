@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+    gap: 48px 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    margin-bottom: 48px;
+    height: 73px;
+}
+
+.header_logo{
+    width: 220px;
+    padding: 0.5px;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav_list{
+    display: flex;
+    margin-right: 72px;
+}
+
+.header_nav_list_item a{
+    text-decoration: none;
+    color: #3F5D45;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header_nav_list_item{
+    padding:  8px 24px;
+    box-sizing: border-box;
+}
+
+.header_nav_cart{
+    width: 24px;
+    height: 24px;
+}
+
+.hero{
+    margin-bottom: 48px;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+}
+
+.sidebar{
+    width: 32%;
+    text-align: center;
+}
+
+.sidebar h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    padding:  16px 0;
+    color: #FFFFFF;
+    background: #3F5D45;
+    border-top-left-radius: 6px;border-top-right-radius: 6px;
+}
+
+.sidebar li a{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3F5D45;
+    text-decoration: none;
+    padding: 16px 0;
+    box-sizing: border-box; 
+    display: block;
+    text-align: center;
+    border-top: none; 
+    border-right: 1px solid #EAF0ED; 
+    border-bottom: 1px solid #EAF0ED;
+    border-left: 1px solid #EAF0ED;
+}
+
+.sidebar li a:hover{
+    background: #EAF0ED;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 66%;
+    gap: 24px 0;
+}
+
+.product-list-card{
+    position: relative;
+    width: 48.5%;
+}
+
+.product-list-card-img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.product-list-card-content{
+    display: flex;
+}
+
+.product-list-card-title{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+
+.product-list-card-price{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    color: #3F5D45;
+    border-top: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+}
+
+.product-list-card-buy{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #3F5D45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 0;
+    background: #EAF0ED;
+}
+
+.product-list-card-buy:hover{
+    background: #3F5D45;
+    color: #FFFFFF;
+}
+
+.product-list-card-favorite , .product-list-card-hot{
+    position: absolute;
+}
+
+.product-list-card-favorite{
+    background: none;
+    border: none;
+    right: 24px;
+    top: 24px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.product-list-card-favorite img{
+    width: 24px;
+}
+
+.product-list-card-favorite img:hover{
+    filter: brightness(0) saturate(100%) invert(34%) sepia(99%) saturate(448%) hue-rotate(71deg) brightness(91%) contrast(85%);
+}
+
+.product-list-card-hot{
+    left: 24px;
+    writing-mode: vertical-rl;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    padding: 13px 10px;
+    background: #3F5D45;
+}
+
+.pagination{
+    display: flex;
+    justify-content: end;
+    margin-top: 32px;
+}
+
+.pagination-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-list a{
+    display: block;
+    text-align: center;
+    padding: 21.5px;
+    border: 1px solid #EAF0ED;
+    text-decoration: none;
+    width: 56px;
+    height: 56px;
+    color: #3F5D45;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.pagination-list a:hover{
+    background: #3F5D45;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 1px splid #3F5D45;
+}
+
+
