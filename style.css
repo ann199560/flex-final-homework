@@ -275,6 +275,7 @@ body{
     display: flex;
     justify-content: end;
     margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .pagination-list{
@@ -284,9 +285,10 @@ body{
 }
 
 .pagination-list a{
-    display: block;
-    text-align: center;
-    padding: 21.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21.5px 0;
     border: 1px solid #EAF0ED;
     text-decoration: none;
     width: 56px;
