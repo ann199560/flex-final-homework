@@ -62,7 +62,7 @@ body{
 .container{
     max-width: 1296px;
     margin: 0 auto;
-    gap: 48px 0;
+    padding: 20px;
 }
 
 .header{
@@ -71,7 +71,6 @@ body{
     align-items: center;
     padding: 12px 0;
     margin-bottom: 48px;
-    height: 73px;
 }
 
 .header_logo{
@@ -94,7 +93,6 @@ body{
     text-decoration: none;
     color: #3F5D45;
     font-weight: 600;
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -161,6 +159,10 @@ body{
     border-left: 1px solid #EAF0ED;
 }
 
+.heighlight{
+    background: #EAF0ED;
+}
+
 .sidebar li a:hover{
     background: #EAF0ED;
 }
@@ -193,9 +195,6 @@ body{
     line-height: 1.5;
     width: 50%;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 12px 0;
     color: #3F5D45;
     border: 1px solid #EAF0ED;
@@ -263,7 +262,6 @@ body{
     left: 24px;
     writing-mode: vertical-rl;
     font-weight: 600;
-    font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
     letter-spacing: 4px;
